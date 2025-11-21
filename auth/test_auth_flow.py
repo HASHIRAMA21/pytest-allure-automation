@@ -4,7 +4,7 @@ import allure
 @allure.story("Keycloak login + token refresh ")
 def test_keycloak_auth_flow(keycloak):
     with allure.step("Get an access token"):
-        token = keycloak.get_token("admin","admin")
+        token = keycloak.get_token("admin","d0/Dv@?k/[#Hhl,A3RSL")
         allure.attach(str(token), "Access Token")
         assert "access_token" in token
 
