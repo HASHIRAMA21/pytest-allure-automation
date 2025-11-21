@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     env:
       KEYCLOAK_BASE_URL: ${{ secrets.KEYCLOAK_BASE_URL }}
@@ -31,10 +31,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          # Install Allure CLI
-          sudo apt-add-repository ppa:qameta/allure -y
-          sudo apt-get update
-          sudo apt-get install allure -y
+          brew install allure
 
       - name: Run pytest with Allure
         run: |
