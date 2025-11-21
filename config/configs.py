@@ -2,13 +2,13 @@ import os
 
 
 class Settings:
-    KEYCLOAK_BASE_URL = "http://localhost:8080"
-    KEYCLOAK_REALM = "master"
+    KEYCLOAK_BASE_URL = "https://lemur-10.cloud-iam.com/"
+    KEYCLOAK_REALM = "orange"
     KEYCLOAK_CLIENT_ID = "admin-cli"
     KEYCLOAK_CLIENT_SECRET = ""
     KEYCLOAK_USERNAME = "admin"
-    KEYCLOAK_PASSWORD = "admin"
-    API_BASE_URL = "http://localhost:8000"
+    KEYCLOAK_PASSWORD = "d0/Dv@?k/[#Hhl,A3RSL"
+    API_BASE_URL = "https://lemur-10.cloud-iam.com/"
 
 settings = Settings()
 
